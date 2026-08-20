@@ -1,0 +1,74 @@
+[
+  {
+    "canonical": "Python",
+    "aliases": ["python", "py", "python3"]
+  },
+  {
+    "canonical": "Java",
+    "aliases": ["java"]
+  },
+  {
+    "canonical": "C++",
+    "aliases": ["c++", "cpp"]
+  },
+  {
+    "canonical": "C",
+    "aliases": ["c language"]
+  },
+  {
+    "canonical": "C#",
+    "aliases": ["c#", "csharp", "c-sharp"]
+  },
+  {
+    "canonical": "JavaScript",
+    "aliases": ["javascript", "js"]
+  },
+  {
+    "canonical": "TypeScript",
+    "aliases": ["typescript", "ts"]
+  },
+  {
+    "canonical": "SQL",
+    "aliases": ["sql", "structured query language", "pl/sql", "t-sql"]
+  },
+  {
+    "canonical": "Go",
+    "aliases": ["go", "golang"]
+  },
+  {
+    "canonical": "Rust",
+    "aliases": ["rust"]
+  },
+  {
+    "canonical": "HTML",
+    "aliases": ["html", "html5"]
+  },
+  {
+    "canonical": "CSS",
+    "aliases": ["css", "css3"]
+  },
+  {
+    "canonical": "PHP",
+    "aliases": ["php"]
+  },
+  {
+    "canonical": "Ruby",
+    "aliases": ["ruby"]
+  },
+  {
+    "canonical": "Kotlin",
+    "aliases": ["kotlin"]
+  },
+  {
+    "canonical": "Swift",
+    "aliases": ["swift"]
+  },
+  {
+    "canonical": "R",
+    "aliases": ["r language"]
+  },
+  {
+    "canonical": "MATLAB",
+    "aliases": ["matlab"]
+  }
+]

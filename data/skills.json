@@ -1,0 +1,74 @@
+[
+  {
+    "canonical": "AI/ML",
+    "aliases": ["ai/ml", "ai ml", "ai", "ml", "artificial intelligence", "machine learning"]
+  },
+  {
+    "canonical": "Deep Learning",
+    "aliases": ["deep learning", "dl", "neural networks"]
+  },
+  {
+    "canonical": "Natural Language Processing",
+    "aliases": ["nlp", "natural language processing", "text processing"]
+  },
+  {
+    "canonical": "Computer Vision",
+    "aliases": ["cv", "computer vision", "image processing", "object detection"]
+  },
+  {
+    "canonical": "Data Science",
+    "aliases": ["data science", "data scientist"]
+  },
+  {
+    "canonical": "Data Analysis",
+    "aliases": ["data analysis", "data analytics", "eda", "exploratory data analysis"]
+  },
+  {
+    "canonical": "Data Visualization",
+    "aliases": ["data visualization", "data viz", "dashboarding"]
+  },
+  {
+    "canonical": "Web Development",
+    "aliases": ["web development", "web dev"]
+  },
+  {
+    "canonical": "Frontend Development",
+    "aliases": ["frontend", "front-end", "frontend development", "client side"]
+  },
+  {
+    "canonical": "Backend Development",
+    "aliases": ["backend", "back-end", "backend development", "server side"]
+  },
+  {
+    "canonical": "Full Stack Development",
+    "aliases": ["fullstack", "full stack", "full-stack"]
+  },
+  {
+    "canonical": "Cloud Computing",
+    "aliases": ["cloud computing", "cloud infrastructure", "cloud"]
+  },
+  {
+    "canonical": "DevOps",
+    "aliases": ["devops", "ci/cd", "continuous integration", "continuous deployment"]
+  },
+  {
+    "canonical": "Database Management",
+    "aliases": ["database management", "dbms", "database administration", "database design"]
+  },
+  {
+    "canonical": "UI/UX Design",
+    "aliases": ["ui/ux", "ui design", "ux design", "user interface"]
+  },
+  {
+    "canonical": "Cybersecurity",
+    "aliases": ["cybersecurity", "cyber security", "infosec", "network security"]
+  },
+  {
+    "canonical": "System Design",
+    "aliases": ["system design", "software architecture", "high level design"]
+  },
+  {
+    "canonical": "API Development",
+    "aliases": ["api development", "restful apis", "rest api", "web services"]
+  }
+]

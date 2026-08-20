@@ -1,0 +1,134 @@
+[
+  {
+    "canonical": "CNN",
+    "aliases": ["cnn", "cnns", "convolutional neural network", "convolutional neural networks", "cnn models"]
+  },
+  {
+    "canonical": "RNN",
+    "aliases": ["rnn", "rnns", "recurrent neural network", "recurrent neural networks"]
+  },
+  {
+    "canonical": "LSTM",
+    "aliases": ["lstm", "lstms", "long short term memory"]
+  },
+  {
+    "canonical": "Transformer",
+    "aliases": ["transformer", "transformers", "transformer models"]
+  },
+  {
+    "canonical": "BERT",
+    "aliases": ["bert", "roberta", "distilbert"]
+  },
+  {
+    "canonical": "GPT",
+    "aliases": ["gpt", "gpt-3", "gpt-4", "chatgpt"]
+  },
+  {
+    "canonical": "YOLO",
+    "aliases": ["yolo", "yolov5", "yolov8", "yolov9", "yolov10", "yolov11"]
+  },
+  {
+    "canonical": "TensorFlow",
+    "aliases": ["tensorflow", "tf"]
+  },
+  {
+    "canonical": "PyTorch",
+    "aliases": ["pytorch", "torch"]
+  },
+  {
+    "canonical": "Scikit-learn",
+    "aliases": ["scikit-learn", "scikitlearn", "sklearn"]
+  },
+  {
+    "canonical": "Keras",
+    "aliases": ["keras"]
+  },
+  {
+    "canonical": "OpenCV",
+    "aliases": ["opencv", "cv2"]
+  },
+  {
+    "canonical": "Pandas",
+    "aliases": ["pandas", "pd"]
+  },
+  {
+    "canonical": "NumPy",
+    "aliases": ["numpy", "np"]
+  },
+  {
+    "canonical": "Hugging Face",
+    "aliases": ["hugging face", "huggingface", "transformers library"]
+  },
+  {
+    "canonical": "LangChain",
+    "aliases": ["langchain"]
+  },
+  {
+    "canonical": "Docker",
+    "aliases": ["docker", "containerization"]
+  },
+  {
+    "canonical": "Kubernetes",
+    "aliases": ["kubernetes", "k8s"]
+  },
+  {
+    "canonical": "AWS",
+    "aliases": ["aws", "amazon web services", "amazon ec2", "s3"]
+  },
+  {
+    "canonical": "Azure",
+    "aliases": ["azure", "microsoft azure"]
+  },
+  {
+    "canonical": "GCP",
+    "aliases": ["gcp", "google cloud platform", "google cloud"]
+  },
+  {
+    "canonical": "React",
+    "aliases": ["react", "react.js", "reactjs"]
+  },
+  {
+    "canonical": "Node.js",
+    "aliases": ["node.js", "nodejs", "node"]
+  },
+  {
+    "canonical": "Django",
+    "aliases": ["django"]
+  },
+  {
+    "canonical": "Flask",
+    "aliases": ["flask"]
+  },
+  {
+    "canonical": "FastAPI",
+    "aliases": ["fastapi"]
+  },
+  {
+    "canonical": "Streamlit",
+    "aliases": ["streamlit"]
+  },
+  {
+    "canonical": "PostgreSQL",
+    "aliases": ["postgresql", "postgres"]
+  },
+  {
+    "canonical": "MongoDB",
+    "aliases": ["mongodb", "mongo"]
+  },
+  {
+    "canonical": "MySQL",
+    "aliases": ["mysql"]
+  },
+  {
+    "canonical": "Redis",
+    "aliases": ["redis"]
+  },
+  {
+    "canonical": "Git",
+    "aliases": ["git", "version control"]
+  },
+  {
+    "canonical": "Linux",
+    "aliases": ["linux", "ubuntu", "bash", "unix"]
+  }
+]
