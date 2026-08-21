@@ -1,0 +1,27 @@
+RAHUL VERMA
+Email: rahul.verma@email.com | Portfolio: rahulverma.dev | GitHub: github.com/rahulverma-dev
+
+PROFESSIONAL SUMMARY
+Proactive Software Developer specializing in Full Stack Development and Backend Development. Strong background in architecting REST APIs using FastAPI and Flask, designing normalized relational schemas in PostgreSQL, and deploying microservices with Docker. Skilled in modern JavaScript UI frameworks like React.
+
+TECHNICAL PROFICIENCIES
+- Programming Languages: Python, JavaScript, TypeScript, SQL
+- Backend & APIs: FastAPI, Flask, REST API, API Development, Database Management
+- Frontend Frameworks: React, HTML, CSS
+- Databases & Storage: PostgreSQL, MySQL, Redis
+- DevOps & Cloud: Docker, Git, GitHub, Linux, AWS
+
+EXPERIENCE & PROJECTS
+1. Scalable Cloud Task Manager (Backend & DevOps)
+- Developed secure API endpoints using FastAPI and Python with JWT-based authentication.
+- Managed relational persistence using PostgreSQL and structured cache layers with Redis.
+- Containerized the entire backend service using Docker and set up repository workflows on GitHub.
+
+2. Interactive E-Commerce Dashboard (Full Stack)
+- Constructed responsive single-page web frontend using React and TypeScript.
+- Integrated asynchronous client calls with Flask backend services to handle order processing.
+- Applied systematic database management practices to optimize query latency in MySQL.
+
+EDUCATION
+B.Tech in Information Technology
+CGPA: 8.7 / 10.0

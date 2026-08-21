@@ -1,0 +1,26 @@
+PRIYA SHARMA
+Email: priya.sharma@email.com | GitHub: github.com/priyasharma-ai | LinkedIn: linkedin.com/in/priyasharma
+
+PROFESSIONAL SUMMARY
+Motivated AI/ML Enthusiast and final-year student with hands-on experience in Deep Learning and Computer Vision. Demonstrated ability in building end-to-end Machine Learning pipelines, training CNN and Transformer architectures, and optimizing model performance using PyTorch and TensorFlow. Proficient in exploratory data analysis and SQL database querying.
+
+TECHNICAL SKILLS
+- Languages: Python, SQL, C++
+- Frameworks & Libraries: PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy
+- Architectures & Models: CNN, Transformer, BERT, ResNet
+- Core Domains: Machine Learning, Deep Learning, Computer Vision, Data Analysis, Natural Language Processing
+- Developer Tools: Git, GitHub, Linux, Jupyter Notebook
+
+PROJECT EXPERIENCE
+1. Automated Defect Detection System (Computer Vision)
+- Engineered a convolutional neural network (CNN) model using PyTorch to identify surface defects in industrial components.
+- Performed extensive feature engineering and exploratory data analysis using Pandas and NumPy.
+- Leveraged Scikit-learn metrics for model evaluation, achieving an accuracy score of 94.2%.
+
+2. Multi-Class Sentiment Classifier (NLP)
+- Implemented fine-tuned Transformer and BERT models using TensorFlow and Python for sentiment analysis on customer reviews.
+- Managed code versioning with Git and automated benchmark evaluations across test datasets.
+
+EDUCATION
+B.Tech in Computer Science and Engineering
+CGPA: 8.9 / 10.0
