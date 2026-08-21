@@ -15,11 +15,10 @@ st.caption("Deterministic NLP Extraction & Role Matching (Built without LLM APIs
 extractor = SkillExtractor(data_dir="data")
 matcher = JobMatcher(roles_path="data/job_roles.json", data_dir="data")
 
-tab1, tab2 = st.tabs(["Part 1: Conversational Extraction", "Part 2: Resume Matching"])
+tab1, tab2 = st.tabs(["1: Extraction", "2: Matching"])
 
-# ---------------------------------------------------------
 # PART 1: Conversational Skill Extraction
-# ---------------------------------------------------------
+
 with tab1:
     st.header("Extract Skills from Experience Description")
     st.write("Pass conversational text to extract normalized skills, technologies, and languages.")
@@ -43,9 +42,8 @@ with tab1:
             key="dl_part1"
         )
 
-# ---------------------------------------------------------
 # PART 2: Resume Parsing & Job Matching
-# ---------------------------------------------------------
+
 with tab2:
     st.header("Resume Analysis & Role Recommendation")
     st.write("Parse a resume (.pdf / .txt) to match candidate skills against predefined job roles.")
