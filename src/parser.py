@@ -1,48 +1,42 @@
 import os
 
 class ResumeParser:
-    """
-    Utility class to extract raw text from PDF and TXT resume files.
-    """
     @staticmethod
-    def extract_text(file_path: str) -> str:
+    def extract_text(file_path):
         if not os.path.exists(file_path):
-            raise FileNotFoundError(f"Resume file not found: {file_path}")
+            raise FileNotFoundError(f"File not found: {file_path}")
 
+        # Check whether the file is a text file or PDF
         ext = os.path.splitext(file_path)[1].lower()
 
         if ext == ".txt":
-            with open(file_path, "r", encoding="utf-8") as f:
+            with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
                 return f.read().strip()
 
         elif ext == ".pdf":
             try:
                 from pypdf import PdfReader
-                from pypdf.errors import PdfStreamError
             except ImportError:
-                raise ImportError(
-                    "pypdf is required to read PDF files. Run 'pip install pypdf' in your terminal."
-                )
+                raise ImportError("Please install pypdf by running: pip install pypdf")
 
             try:
-                text = ""
                 reader = PdfReader(file_path)
+                pages_text = []
                 for page in reader.pages:
-                    extracted = page.extract_text()
-                    if extracted:
-                        text += extracted + "\n"
-                
-                if not text.strip():
-                    raise ValueError("PDF contains no readable text (it might be an image-only scan).")
-                
-                return text.strip()
+                    text = page.extract_text()
+                    if text:
+                        pages_text.append(text)
 
-            except PdfStreamError:
-                # If a text file was mistakenly named .pdf, read it cleanly as text fallback
+                full_text = "\n".join(pages_text).strip()
+                if full_text:
+                    return full_text
+
+                raise ValueError("PDF has no readable text layer (might be a scanned image).")
+
+            except Exception:
+                # Fallback: if pypdf fails or a plain text file was renamed to .pdf
                 with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
                     return f.read().strip()
-            except Exception as e:
-                raise RuntimeError(f"Error parsing PDF file: {e}")
 
         else:
-            raise ValueError(f"Unsupported file format '{ext}'. Please provide a .txt or .pdf file.")
+            raise ValueError(f"Unsupported file extension '{ext}'. Only .txt and .pdf are supported.")

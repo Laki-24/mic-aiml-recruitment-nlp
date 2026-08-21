@@ -1,45 +1,40 @@
 import json
 import os
-from typing import Dict, List, Any
 from src.extractor import SkillExtractor
 
 class JobMatcher:
-    def __init__(self, roles_path: str = "data/job_roles.json", data_dir: str = "data"):
+    def __init__(self, roles_path="data/job_roles.json", data_dir="data"):
+        # Reuse our Part 1 extractor to parse skills from resumes
         self.extractor = SkillExtractor(data_dir=data_dir)
         self.roles_path = roles_path
         self.job_roles = self._load_job_roles()
 
-    def _load_job_roles(self) -> List[Dict[str, Any]]:
+    def _load_job_roles(self):
         if not os.path.exists(self.roles_path):
-            raise FileNotFoundError(f"Job roles file not found: {self.roles_path}")
+            raise FileNotFoundError(f"Job roles file not found at: {self.roles_path}")
         with open(self.roles_path, "r", encoding="utf-8") as f:
             return json.load(f)
 
-    def match_resume(self, resume_text: str) -> Dict[str, Any]:
-        """
-        Analyzes resume text, extracts skills, and ranks job role matches.
-        """
-        # Step 1: Extract candidate skills using Part 1 extractor
+    def match_resume(self, resume_text):
+        # Step 1: Run the resume text through Part 1 entity extractor
         extracted = self.extractor.extract(resume_text)
         
-        # Combine all found items into a normalized set
+        # Combine all found candidate items into a set for quick comparison
         candidate_skills = set(
             extracted["skill"] + extracted["technology"] + extracted["language"]
         )
 
         role_evaluations = []
 
-        # Step 2: Compare against every role in database
+        # Step 2: Compare candidate skills against each job role
         for role in self.job_roles:
-            target_skills = set(role["required_skills"] + role["preferred_technologies"])
+            target_skills = set(role.get("required_skills", []) + role.get("preferred_technologies", []))
             
-            # Set intersection gives matching skills
+            # Python set operations: intersection for matched, difference for missing
             matched = sorted(list(candidate_skills.intersection(target_skills)))
-            
-            # Set difference gives missing required skills
             missing = sorted(list(target_skills.difference(candidate_skills)))
 
-            # Score = (Matched / Total Required) * 100
+            # Calculate match score percentage
             if len(target_skills) > 0:
                 match_percentage = round((len(matched) / len(target_skills)) * 100, 1)
             else:
@@ -53,9 +48,13 @@ class JobMatcher:
                 "missing_skills": missing
             })
 
-        # Step 3: Sort by highest match score
+        # Step 3: Sort roles with highest match score first
         ranked_roles = sorted(role_evaluations, key=lambda x: x["match_score"], reverse=True)
-        best_fit = ranked_roles[0]["role_title"] if ranked_roles and ranked_roles[0]["match_score"] > 0 else "No direct match found"
+        
+        if ranked_roles and ranked_roles[0]["match_score"] > 0:
+            best_fit = ranked_roles[0]["role_title"]
+        else:
+            best_fit = "No direct match found"
 
         return {
             "extracted_candidate_data": extracted,
