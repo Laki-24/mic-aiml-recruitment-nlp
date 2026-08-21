@@ -1,0 +1,68 @@
+[
+  {
+    "role_id": "ai_ml_engineer",
+    "title": "AI/ML Engineer",
+    "required_skills": [
+      "AI/ML",
+      "Deep Learning",
+      "Python"
+    ],
+    "preferred_technologies": [
+      "PyTorch",
+      "TensorFlow",
+      "CNN",
+      "Transformer",
+      "Scikit-learn"
+    ],
+    "description": "Develop and deploy deep learning models using Python and frameworks like PyTorch or TensorFlow."
+  },
+  {
+    "role_id": "data_analyst",
+    "title": "Data Analyst",
+    "required_skills": [
+      "Data Analysis",
+      "Data Visualization",
+      "SQL"
+    ],
+    "preferred_technologies": [
+      "Pandas",
+      "NumPy",
+      "PostgreSQL",
+      "MySQL"
+    ],
+    "description": "Analyze tabular data, write SQL queries, and generate visual insights using Pandas and data tools."
+  },
+  {
+    "role_id": "backend_developer",
+    "title": "Backend Developer",
+    "required_skills": [
+      "Backend Development",
+      "API Development",
+      "Database Management"
+    ],
+    "preferred_technologies": [
+      "FastAPI",
+      "Flask",
+      "PostgreSQL",
+      "Docker",
+      "Git"
+    ],
+    "description": "Build high-performance REST APIs and manage relational databases using Python, Docker, and PostgreSQL."
+  },
+  {
+    "role_id": "fullstack_developer",
+    "title": "Full Stack Developer",
+    "required_skills": [
+      "Full Stack Development",
+      "Frontend Development",
+      "Backend Development"
+    ],
+    "preferred_technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Git"
+    ],
+    "description": "Build responsive web user interfaces in React and connect them with backend APIs and databases."
+  }
+]
